@@ -1,0 +1,14 @@
+import scipy
+import numpy
+import re
+
+database_name = 'object_model_labels.txt'
+#database_name = 'scene_model_labels.txt'
+
+my_words = numpy.recfromcsv(database_name)
+
+my_data = scipy.zeros((my_words.shape[0],200));
+for idx in range(0,my_words.shape[0]):
+	tw = my_words[idx][0]
+	tw = re.split(r'\_',tw)[0]
+	my_data[idx,:] = model[tw]

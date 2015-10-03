@@ -1,0 +1,61 @@
+hemishpere,roi,cluster,genre,style,weight
+right,STS,4,Composition styles,Detailed,-1.353831871
+right,STS,4,Color,Pastel,0.083708718
+right,STS,4,Mood,Melancholy,-0.015224839
+right,STS,4,Genre,Noir,-0.132959084
+right,STS,4,Optical techniques,HDR,0.122952225
+right,STS,4,Genre,Vintage,0.014363346
+right,STS,4,Optical techniques,Long exposure,-0.223963028
+right,STS,4,Genre,Horror,0.150006312
+right,STS,4,Atmosphere,Sunny,0
+right,STS,4,Color,Bright,0.416394905
+right,STS,4,Atmosphere,Hazy,-0.171907629
+right,STS,4,Optical techniques,Bokeh,0.033591039
+right,STS,4,Mood,Serene,0.35650654
+right,STS,4,Composition styles,Texture,-0.331618751
+right,STS,4,Mood,Ethereal,0.09674994
+right,STS,4,Optical techniques,Macro,0.352992568
+right,STS,4,Optical techniques,Depth-of-field,0.037648562
+right,STS,4,Composition styles,Geometric composition,-0.286130203
+right,STS,4,Composition styles,Minimal,0.585308231
+right,STS,4,Genre,Romantic,-0.102478609
+left,STS,1,Composition styles,Detailed,-1.662397662
+left,STS,1,Color,Pastel,0.195607014
+left,STS,1,Mood,Melancholy,0.004374612
+left,STS,1,Genre,Noir,-0.072990684
+left,STS,1,Optical techniques,HDR,-0.424162598
+left,STS,1,Genre,Vintage,-0.027442638
+left,STS,1,Optical techniques,Long exposure,-0.215253095
+left,STS,1,Genre,Horror,0.133952064
+left,STS,1,Atmosphere,Sunny,0
+left,STS,1,Color,Bright,0.040837499
+left,STS,1,Atmosphere,Hazy,-0.403936617
+left,STS,1,Optical techniques,Bokeh,0.164725589
+left,STS,1,Mood,Serene,-0.129339796
+left,STS,1,Composition styles,Texture,-0.106540439
+left,STS,1,Mood,Ethereal,0.162333489
+left,STS,1,Optical techniques,Macro,0.091882228
+left,STS,1,Optical techniques,Depth-of-field,0.036500554
+left,STS,1,Composition styles,Geometric composition,0.341393874
+left,STS,1,Composition styles,Minimal,0.389861695
+left,STS,1,Genre,Romantic,-0.359396236
+left,STS,2,Composition styles,Detailed,-1.570653979
+left,STS,2,Color,Pastel,0.152624902
+left,STS,2,Mood,Melancholy,-0.023942969
+left,STS,2,Genre,Noir,0.003006142
+left,STS,2,Optical techniques,HDR,0.051756585
+left,STS,2,Genre,Vintage,0.000240435
+left,STS,2,Optical techniques,Long exposure,-0.142143801
+left,STS,2,Genre,Horror,0.143158181
+left,STS,2,Atmosphere,Sunny,0
+left,STS,2,Color,Bright,0.075838072
+left,STS,2,Atmosphere,Hazy,-0.099976432
+left,STS,2,Optical techniques,Bokeh,0.00464603
+left,STS,2,Mood,Serene,0.239189582
+left,STS,2,Composition styles,Texture,-0.095301988
+left,STS,2,Mood,Ethereal,0.176721475
+left,STS,2,Optical techniques,Macro,0.030235675
+left,STS,2,Optical techniques,Depth-of-field,0.057612303
+left,STS,2,Composition styles,Geometric composition,0.400954523
+left,STS,2,Composition styles,Minimal,0.217610155
+left,STS,2,Genre,Romantic,-0.303540045

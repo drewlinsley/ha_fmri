@@ -29,10 +29,10 @@ In contrast to typical neuroimaging experiments in which subjects view static an
 
 Data was collected by the Center for Brains, Minds, and Machines Summer Course teaching assistants, Leyla Isik and Alex Kell. One male subject viewed sections of the movie *Home Alone 2* while being scanned with a magnetic resonance imaging (MRI) scanner. Initially, the subject was scanned twice over two days while watching the full movie. However, technical issues prompted the subject to complete an addition four scanning sessions during which the subject watched the same excerpt lasting approximately 20 minutes. All analyses were performed on these four scanning sessions. The participant passively watched the movie during each session and did not complete any task.
 
-<a name="#preds-rois">![](presentation/img/preds_rois.png)</a>
+![](presentation/img/preds_rois.png)
 **Figure 1.** *Visual Style encoding model prediction. A visual style encoding model was created by encoding the movie's visual style and fitting it to each voxel's activity. Correlations between held-out activity and predicted activity for those same voxels were calculated and projected to a flattened map of each hemisphere of the participant. Warmer colors depict areas with stronger correlations between their actual and predicted activity. Gray patches and their labels depict ROIs used in our analyses.*
 
-In a separate session, a comprehensive localizer was used to identify regions-of-interest (ROIs), used in further analyses (see Fig. [1](#preds-rois)):
+In a separate session, a comprehensive localizer was used to identify regions-of-interest (ROIs), used in further analyses (see Fig. 1):
 
 - Primary visual cortex (V1).
 - Object-selective posterior and anterior parts of lateral occipital cortex (LO and pFs).
@@ -71,9 +71,9 @@ Following construction of encoding models on the training data, these models wer
 
 ## Results and Discussion
 
-Fig. [1](#preds-rois) depicts correlations between model-generated and fMRI data for the Visual Style, projected to a flattened map of each hemisphere of the participant. Many of the higher visual areas appear to be predicted well by the movie's visual style. To gain more insight into model predictability, we averaged correlations in each ROI for each model (Fig. [2](#preds)).
+Fig. 1 depicts correlations between model-generated and fMRI data for the Visual Style, projected to a flattened map of each hemisphere of the participant. Many of the higher visual areas appear to be predicted well by the movie's visual style. To gain more insight into model predictability, we averaged correlations in each ROI for each model (Fig. 2).
 
-<a name="#preds-rois">![](presentation/img/preds.png)</a>
+![](presentation/img/preds.png)
 **Figure 2.** *Model correlations with ROIs. Gray bars indicate the upper limit of correlations that was obtained by Spearman-Brown-corrected split-half correlations of the actual fMRI data. Error bars depict 95% bootstrapped confidence intervals.*
 
 Most models appeared to account well for scene-selective areas, but no model could reliably capture activity in V1, EBA, and object-selective regions. Since higher-level features are captured by all of these models, the lack of correlation with V1 is not surprising. We expect that models capturing low-level visual statistics would provide a better fit (e.g. HMAX or gist).
@@ -87,17 +87,17 @@ Overall, the best performing model was the Visual Style model that reached over 
 ### Decoding
 We adopted a multivoxel approach to decode the movie's visual style using activity in STS. Given the failure of previous studies of STS to provide a consistent characterization of its visual feature tuning, we reasoned that it consisted of several subregions with different response properties. Using affinity propagation clustering, we identified clusters of voxels within STS with unique tuning properties. Affinity propagation determines the set of clusters that optimally "passes messages" through a network consisting of all datapoints. This algorithm indicated that STS contains 3 clusters of voxels with different relationships to each encoding model. For the decoding analysis, we focused on the STS cluster that was best fit to the visual style of the movie, located within right STS.
 
-We used a softmax classifier to decode the visual style of each movie frame in the testing set of data. The classifier was 5-fold cross-validated on the testing set, first being fit on 80% of the data and then tested on a held-out 20% of the data. A regularization parameter was additionally 5-fold cross-validated on the classifier fit data using the same approach as detailed above for encoding models. Overall, our model achieved 24.39% decoding accuracy, which was well above chance as indicated by the 95% bootstrapped confidence interval  (Fig. [3](#decoding)).
+We used a softmax classifier to decode the visual style of each movie frame in the testing set of data. The classifier was 5-fold cross-validated on the testing set, first being fit on 80% of the data and then tested on a held-out 20% of the data. A regularization parameter was additionally 5-fold cross-validated on the classifier fit data using the same approach as detailed above for encoding models. Overall, our model achieved 24.39% decoding accuracy, which was well above chance as indicated by the 95% bootstrapped confidence interval  (Fig. 3).
 
-<a name="#decoding">![](presentation/img/decoding.png)</a>
+![](presentation/img/decoding.png)
 **Figure 3.** *Comparison of model and brain decoding of the visual style and the kind of style for several random movie frames. Green indicates where the predictions match. The cartoon plot on the left shows overall model decoding and the 95% bootstrapped confidence interval.*
 
 ### ROI tuning properties
 
-Finally, we computed how well the visual style feature encoding model fit this cluster of voxels in STS. We did this by visualizing the averaged encoding model weights across this cluster for each of the visual style features (Fig. [4](#tuning)). These features were further grouped into their basic level clusters to gain broader insight into the types of high-level visual features to which this cluster was tuned. A direct comparison of the magnitudes of these weights was possible since they were standardized. We found that color, mood, and optical techniques were most important in predicting the activity of this cluster, whereas framing, genre, and atmosphere did not predict cluster's activity well.
+Finally, we computed how well the visual style feature encoding model fit this cluster of voxels in STS. We did this by visualizing the averaged encoding model weights across this cluster for each of the visual style features (Fig. 4). These features were further grouped into their basic level clusters to gain broader insight into the types of high-level visual features to which this cluster was tuned. A direct comparison of the magnitudes of these weights was possible since they were standardized. We found that color, mood, and optical techniques were most important in predicting the activity of this cluster, whereas framing, genre, and atmosphere did not predict cluster's activity well.
 
-<a name="#tuning">![](presentation/img/tuning.png)</a>
-**Figre 4.** *Tuning properties in a voxel cluster in the right STS.*
+![](presentation/img/tuning.png)
+**Figure 4.** *Tuning properties in a voxel cluster in the right STS.*
 
 ## Conclusion
 
